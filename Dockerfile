@@ -11,6 +11,8 @@ ARG ENABLE_GCC14=false
 ARG ENABLE_EMULATOR=false
 ARG ENABLE_MARATHON=false
 ARG MARATHON_VERSION=0.10.1
+ARG ENABLE_ALLURE=false
+ARG ALLURE_VERSION=2.27.0
 ARG PYTHON_VERSION=2.7.5
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -22,6 +24,7 @@ ENV ANDROID_SDK=${ANDROID_HOME}
 ENV ANDROID_NDK=/opt/android-ndk-linux
 ENV ANDROID_NDK_ROOT=${ANDROID_NDK}
 ENV GRADLE_PROFILER_HOME=/opt/gradle-profiler
+ENV ALLURE_HOME=/opt/allure
 
 ENV PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin"
 ENV PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/tools/bin"
@@ -37,6 +40,7 @@ ENV PATH="${PATH}:${ANDROID_HOME}/emulator"
 ENV PATH="${PATH}:${ANDROID_HOME}/bin"
 ENV PATH="${PATH}:${GRADLE_PROFILER_HOME}/bin"
 ENV PATH="${PATH}:/opt/marathon/bin"
+ENV PATH="${PATH}:${ALLURE_HOME}/bin"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -161,6 +165,17 @@ RUN set -eux; \
       rm -f marathon.zip; \
       ln -sf "/opt/marathon/marathon-${MARATHON_VERSION}/bin/marathon" /usr/local/bin/marathon; \
       marathon version; \
+    fi
+
+RUN set -eux; \
+    if [[ "${ENABLE_ALLURE}" == "true" ]]; then \
+      mkdir -p "${ALLURE_HOME}"; \
+      cd "${ALLURE_HOME}"; \
+      wget -q "https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.zip" -O allure.zip; \
+      unzip allure.zip; \
+      mv "allure-${ALLURE_VERSION}"/* .; \
+      rm -rf "allure-${ALLURE_VERSION}" allure.zip; \
+      allure --version; \
     fi
 
 RUN set -eux; \

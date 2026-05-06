@@ -58,6 +58,13 @@ jq -e '
         else ((.value.docker | has("marathon_version")) | not)
         end
       )
+      and (.value.docker.features.allure | type == "boolean")
+      and (
+        if .value.docker.features.allure
+        then (.value.docker.allure_version | type == "string" and test("^[0-9]+\\.[0-9]+\\.[0-9]+$"))
+        else ((.value.docker | has("allure_version")) | not)
+        end
+      )
     )
 ' "${variants_file}" >/dev/null
 

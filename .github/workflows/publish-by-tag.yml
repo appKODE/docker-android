@@ -61,3 +61,5 @@ jobs:
             ENABLE_EMULATOR=${{ steps.resolve.outputs.enable_emulator }}
             ENABLE_MARATHON=${{ steps.resolve.outputs.enable_marathon }}
             MARATHON_VERSION=${{ steps.resolve.outputs.marathon_version }}
+            ENABLE_ALLURE=${{ steps.resolve.outputs.enable_allure }}
+            ALLURE_VERSION=${{ steps.resolve.outputs.allure_version }}

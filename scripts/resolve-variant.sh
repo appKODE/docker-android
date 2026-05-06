@@ -85,6 +85,8 @@ enable_gcc14="$(jq -r '.docker.features.gcc14' <<<"${variant_json}")"
 enable_emulator="$(jq -r '.docker.features.emulator // false' <<<"${variant_json}")"
 enable_marathon="$(jq -r '.docker.features.marathon // false' <<<"${variant_json}")"
 marathon_version="$(jq -r '.docker.marathon_version // ""' <<<"${variant_json}")"
+enable_allure="$(jq -r '.docker.features.allure // false' <<<"${variant_json}")"
+allure_version="$(jq -r '.docker.allure_version // ""' <<<"${variant_json}")"
 
 canonical_tag="${docker_user}/${image_repo}:${variant_id}"
 release_tag="${docker_user}/${image_repo}:${variant_id}-${release}"
@@ -106,6 +108,8 @@ if [[ -n "${output_file}" ]]; then
     echo "enable_emulator=${enable_emulator}"
     echo "enable_marathon=${enable_marathon}"
     echo "marathon_version=${marathon_version}"
+    echo "enable_allure=${enable_allure}"
+    echo "allure_version=${allure_version}"
     echo "canonical_tag=${canonical_tag}"
     echo "release_tag=${release_tag}"
     echo "tags<<EOF"
@@ -130,6 +134,8 @@ enable_gcc14=${enable_gcc14}
 enable_emulator=${enable_emulator}
 enable_marathon=${enable_marathon}
 marathon_version=${marathon_version}
+enable_allure=${enable_allure}
+allure_version=${allure_version}
 canonical_tag=${canonical_tag}
 release_tag=${release_tag}
 OUT

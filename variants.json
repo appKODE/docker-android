@@ -44,7 +44,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -90,7 +91,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -138,7 +140,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -183,7 +186,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -228,7 +232,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -286,7 +291,8 @@
           "python2": true,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -334,7 +340,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -391,7 +398,8 @@
           "python2": true,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -436,7 +444,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -482,7 +491,8 @@
           "python2": false,
           "gcc14": false,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -535,7 +545,8 @@
           "python2": true,
           "gcc14": true,
           "emulator": false,
-          "marathon": false
+          "marathon": false,
+          "allure": false
         }
       }
     },
@@ -606,9 +617,11 @@
           "python2": true,
           "gcc14": false,
           "emulator": true,
-          "marathon": true
+          "marathon": true,
+          "allure": true
         },
-        "marathon_version": "0.10.1"
+        "marathon_version": "0.10.1",
+        "allure_version": "2.27.0"
       }
     },
     "api35-36-j17-21-23-ndk26-emu-api35": {
@@ -678,9 +691,11 @@
           "python2": true,
           "gcc14": false,
           "emulator": true,
-          "marathon": true
+          "marathon": true,
+          "allure": true
         },
-        "marathon_version": "0.10.1"
+        "marathon_version": "0.10.1",
+        "allure_version": "2.27.0"
       }
     }
   }
