@@ -744,6 +744,94 @@
         "marathon_version": "0.10.1",
         "allure_version": "2.27.0"
       }
+    },
+    "api36-37-j17-21-23": {
+      "platforms": [
+        "linux/amd64"
+      ],
+      "docker": {
+        "ubuntu": "23.04",
+        "apt_profile": "ubuntu23_old_releases",
+        "apt_packages": [
+          "sudo",
+          "rsync",
+          "openjdk-17-jdk",
+          "java-21-amazon-corretto-jdk",
+          "java-23-amazon-corretto-jdk",
+          "curl",
+          "expect",
+          "git",
+          "git-lfs",
+          "libc6:i386",
+          "libncurses5:i386",
+          "libstdc++6:i386",
+          "zlib1g:i386",
+          "wget",
+          "unzip",
+          "vim",
+          "jq"
+        ],
+        "java_default": "java-23-amazon-corretto",
+        "sdk_packages": [
+          "cmdline-tools;latest",
+          "build-tools;36.0.0",
+          "build-tools;37.0.0",
+          "platform-tools",
+          "platforms;android-36",
+          "platforms;android-37.0"
+        ],
+        "features": {
+          "profiler": false,
+          "python2": false,
+          "gcc14": false,
+          "emulator": false,
+          "marathon": false,
+          "allure": false
+        }
+      }
+    },
+    "api37-j17-21-23": {
+      "platforms": [
+        "linux/amd64"
+      ],
+      "docker": {
+        "ubuntu": "23.04",
+        "apt_profile": "ubuntu23_old_releases",
+        "apt_packages": [
+          "sudo",
+          "rsync",
+          "openjdk-17-jdk",
+          "java-21-amazon-corretto-jdk",
+          "java-23-amazon-corretto-jdk",
+          "curl",
+          "expect",
+          "git",
+          "git-lfs",
+          "libc6:i386",
+          "libncurses5:i386",
+          "libstdc++6:i386",
+          "zlib1g:i386",
+          "wget",
+          "unzip",
+          "vim",
+          "jq"
+        ],
+        "java_default": "java-23-amazon-corretto",
+        "sdk_packages": [
+          "cmdline-tools;latest",
+          "build-tools;37.0.0",
+          "platform-tools",
+          "platforms;android-37.0"
+        ],
+        "features": {
+          "profiler": false,
+          "python2": false,
+          "gcc14": false,
+          "emulator": false,
+          "marathon": false,
+          "allure": false
+        }
+      }
     }
   }
 }
