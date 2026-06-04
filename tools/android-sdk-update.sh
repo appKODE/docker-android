@@ -18,11 +18,18 @@ if [[ -f commandlinetools-linux.zip ]]; then
   echo "SDK Tools already bootstrapped. Skipping initial setup"
 else
   echo "Bootstrapping SDK-Tools"
-  wget -q https://dl.google.com/android/repository/commandlinetools-linux-6609375_latest.zip -O commandlinetools-linux.zip
-  unzip commandlinetools-linux.zip
+  # cmdline-tools must be recent enough to read repository2-3.xml, where newer
+  # platforms (e.g. platforms;android-37.0, android-36.1) are published. The old
+  # 6609375 (v3.0, 2020) only understood repository2-1/2-2.xml, which stop at
+  # platforms;android-36, so android-37 failed with "Failed to find package".
+  wget -q https://dl.google.com/android/repository/commandlinetools-linux-13114758_latest.zip -O commandlinetools-linux.zip
+  # Modern zips extract to ./cmdline-tools/{bin,lib}; nest under cmdline-tools/tools
+  # to keep the layout the Dockerfile and PATH entries expect.
+  rm -rf cmdline-tools-tmp
+  unzip -q commandlinetools-linux.zip -d cmdline-tools-tmp
   mkdir -p cmdline-tools
-  mv tools cmdline-tools/
-  rm commandlinetools-linux.zip
+  mv cmdline-tools-tmp/cmdline-tools cmdline-tools/tools
+  rm -rf cmdline-tools-tmp commandlinetools-linux.zip
 fi
 
 echo "Ensuring repositories.cfg exists"
