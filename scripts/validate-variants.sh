@@ -29,6 +29,7 @@ expected_ids_json='[
   "api35-36-j17-23",
   "api35-36-j17-23-ndk29-u24-gcc14",
   "api36-37-j17-21-23",
+  "api36-37-j17-21-23-ndk26-emu-api36",
   "api37-j17-21-23"
 ]'
 
