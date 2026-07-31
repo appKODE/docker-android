@@ -35,9 +35,7 @@
           "build-tools;34.0.0",
           "platform-tools",
           "platforms;android-33",
-          "platforms;android-34",
-          "system-images;android-33;google_apis;x86_64",
-          "system-images;android-34;google_apis;x86_64"
+          "platforms;android-34"
         ],
         "features": {
           "profiler": false,
@@ -82,9 +80,7 @@
           "build-tools;34.0.0",
           "platform-tools",
           "platforms;android-33",
-          "platforms;android-34",
-          "system-images;android-33;google_apis;x86_64",
-          "system-images;android-34;google_apis;x86_64"
+          "platforms;android-34"
         ],
         "features": {
           "profiler": false,
@@ -131,9 +127,7 @@
           "build-tools;34.0.0",
           "platform-tools",
           "platforms;android-33",
-          "platforms;android-34",
-          "system-images;android-33;google_apis;x86_64",
-          "system-images;android-34;google_apis;x86_64"
+          "platforms;android-34"
         ],
         "features": {
           "profiler": false,
@@ -223,9 +217,7 @@
           "build-tools;36.0.0",
           "platform-tools",
           "platforms;android-34",
-          "platforms;android-35",
-          "system-images;android-34;google_apis;x86_64",
-          "system-images;android-35;google_apis;x86_64"
+          "platforms;android-35"
         ],
         "features": {
           "profiler": false,
@@ -280,8 +272,6 @@
           "platform-tools",
           "platforms;android-34",
           "platforms;android-35",
-          "system-images;android-34;google_apis;x86_64",
-          "system-images;android-35;google_apis;x86_64",
           "cmake;3.18.1",
           "cmake;3.22.1",
           "ndk;26.2.11394342"
@@ -331,9 +321,7 @@
           "build-tools;36.0.0",
           "platform-tools",
           "platforms;android-34",
-          "platforms;android-35",
-          "system-images;android-34;google_apis;x86_64",
-          "system-images;android-35;google_apis;x86_64"
+          "platforms;android-35"
         ],
         "features": {
           "profiler": false,
@@ -387,8 +375,6 @@
           "platform-tools",
           "platforms;android-34",
           "platforms;android-35",
-          "system-images;android-34;google_apis;x86_64",
-          "system-images;android-35;google_apis;x86_64",
           "cmake;3.18.1",
           "cmake;3.22.1",
           "ndk;26.2.11394342"
@@ -435,9 +421,7 @@
           "build-tools;36.0.0",
           "platform-tools",
           "platforms;android-34",
-          "platforms;android-35",
-          "system-images;android-34;google_apis;x86_64",
-          "system-images;android-35;google_apis;x86_64"
+          "platforms;android-35"
         ],
         "features": {
           "profiler": false,
@@ -482,9 +466,7 @@
           "build-tools;36.0.0",
           "platform-tools",
           "platforms;android-35",
-          "platforms;android-36",
-          "system-images;android-35;google_apis;x86_64",
-          "system-images;android-36;google_apis;x86_64"
+          "platforms;android-36"
         ],
         "features": {
           "profiler": false,
@@ -529,9 +511,7 @@
           "build-tools;36.0.0",
           "platform-tools",
           "platforms;android-35",
-          "platforms;android-36",
-          "system-images;android-35;google_apis;x86_64",
-          "system-images;android-36;google_apis;x86_64"
+          "platforms;android-36"
         ],
         "features": {
           "profiler": false,
@@ -582,8 +562,6 @@
           "platform-tools",
           "platforms;android-35",
           "platforms;android-36",
-          "system-images;android-35;google_apis;x86_64",
-          "system-images;android-36;google_apis;x86_64",
           "cmake;4.1.1",
           "ndk;29.0.14033849"
         ],
