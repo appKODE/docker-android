@@ -23,6 +23,7 @@ All image variants are defined in `variants.json` and released by Git tag.
 | `api36-37-j17-21-23` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` | `-` | `-` |
 | `api36-37-j17-21-23-ndk26-emu-api36` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` (+ `system-image 36`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
 | `api36-37-j17-21-23-ndk26-emu-api37` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` (+ `system-image 37`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
+| `api36-37-j17-21-23-ndk26-emu-api36-37` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` (+ `system-image 36,37`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
 | `api37-j17-21-23` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `37` | `-` | `-` |
 
 ## Release By Git Tag
@@ -120,6 +121,7 @@ Multi-JDK variants:
 | `api36-37-j17-21-23` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
 | `api36-37-j17-21-23-ndk26-emu-api36` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
 | `api36-37-j17-21-23-ndk26-emu-api37` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api36-37-j17-21-23-ndk26-emu-api36-37` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
 | `api37-j17-21-23` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
 
 ## Local Validation
