@@ -834,7 +834,7 @@
           "marathon": true,
           "allure": true
         },
-        "marathon_version": "0.10.1",
+        "marathon_version": "0.10.5",
         "allure_version": "2.27.0"
       }
     },
@@ -906,7 +906,7 @@
           "marathon": true,
           "allure": true
         },
-        "marathon_version": "0.10.1",
+        "marathon_version": "0.10.5",
         "allure_version": "2.27.0"
       }
     },
@@ -979,7 +979,7 @@
           "marathon": true,
           "allure": true
         },
-        "marathon_version": "0.10.1",
+        "marathon_version": "0.10.5",
         "allure_version": "2.27.0"
       }
     },
