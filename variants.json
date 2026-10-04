@@ -800,7 +800,6 @@
         ],
         "java_default": "java-23-amazon-corretto",
         "sdk_packages": [
-          "tools",
           "cmdline-tools;latest",
           "build-tools;36.0.0",
           "build-tools;37.0.0",
