@@ -766,6 +766,60 @@
         }
       }
     },
+    "api36-37-j17-21-23-ndk26": {
+      "platforms": [
+        "linux/amd64"
+      ],
+      "docker": {
+        "ubuntu": "23.04",
+        "apt_profile": "ubuntu23_old_releases",
+        "apt_packages": [
+          "sudo",
+          "rsync",
+          "openjdk-17-jdk",
+          "java-21-amazon-corretto-jdk",
+          "java-23-amazon-corretto-jdk",
+          "curl",
+          "expect",
+          "git",
+          "git-lfs",
+          "libc6:i386",
+          "libncurses5:i386",
+          "libstdc++6:i386",
+          "zlib1g:i386",
+          "wget",
+          "unzip",
+          "vim",
+          "jq",
+          "net-tools",
+          "ccache",
+          "g++",
+          "gcc",
+          "make",
+          "openssl"
+        ],
+        "java_default": "java-23-amazon-corretto",
+        "sdk_packages": [
+          "tools",
+          "cmdline-tools;latest",
+          "build-tools;36.0.0",
+          "build-tools;37.0.0",
+          "platform-tools",
+          "platforms;android-36",
+          "platforms;android-37.0",
+          "cmake;3.22.1",
+          "ndk;26.2.11394342"
+        ],
+        "features": {
+          "profiler": false,
+          "python2": true,
+          "gcc14": false,
+          "emulator": false,
+          "marathon": false,
+          "allure": false
+        }
+      }
+    },
     "api36-37-j17-21-23-ndk26-emu-api36": {
       "platforms": [
         "linux/amd64"
