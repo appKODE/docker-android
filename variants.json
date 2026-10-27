@@ -6,8 +6,8 @@
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "openjdk-17-jdk",
@@ -17,7 +17,7 @@
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -50,8 +50,8 @@
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "openjdk-21-jdk",
@@ -61,7 +61,7 @@
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -89,14 +89,14 @@
         }
       }
     },
-    "api33-34-j11-17-u25-ma": {
+    "api33-34-j11-17-u24-ma": {
       "platforms": [
         "linux/amd64",
         "linux/arm64"
       ],
       "docker": {
-        "ubuntu": "25.04",
-        "apt_profile": "ubuntu25_i386_focal",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "openjdk-17-jdk",
@@ -106,8 +106,8 @@
           "git",
           "git-lfs",
           "libc6:i386",
-          "libgcc1:i386",
-          "libncurses5:i386",
+          "libgcc-s1:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -140,8 +140,8 @@
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "openjdk-17-jdk",
@@ -151,7 +151,7 @@
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -179,22 +179,22 @@
         }
       }
     },
-    "api34-35-j23-openjdk": {
+    "api34-35-j25-openjdk": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
-          "openjdk-23-jdk",
+          "openjdk-25-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -202,7 +202,7 @@
           "vim",
           "jq"
         ],
-        "java_default": "java-1.23.0-openjdk-amd64",
+        "java_default": "java-1.25.0-openjdk-amd64",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;34.0.0",
@@ -222,25 +222,25 @@
         }
       }
     },
-    "api34-35-j17-21-23-ndk26": {
+    "api34-35-j17-21-25-ndk26": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -254,7 +254,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;34.0.0",
@@ -278,24 +278,24 @@
         }
       }
     },
-    "api34-35-j17-23": {
+    "api34-35-j17-25": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -303,7 +303,7 @@
           "vim",
           "jq"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;34.0.0",
@@ -324,24 +324,24 @@
         }
       }
     },
-    "api34-35-j17-23-ndk26": {
+    "api34-35-j17-25-ndk26": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -355,7 +355,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;34.0.0",
@@ -379,22 +379,22 @@
         }
       }
     },
-    "api34-35-j23-corretto": {
+    "api34-35-j25-corretto": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -402,7 +402,7 @@
           "vim",
           "jq"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;34.0.0",
@@ -427,8 +427,8 @@
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
@@ -439,7 +439,7 @@
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -467,24 +467,24 @@
         }
       }
     },
-    "api35-36-j17-23": {
+    "api35-36-j17-25": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -492,7 +492,7 @@
           "vim",
           "jq"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;35.0.0",
@@ -512,7 +512,7 @@
         }
       }
     },
-    "api35-36-j17-23-ndk29-u24-gcc14": {
+    "api35-36-j17-25-ndk29-u24-gcc14": {
       "platforms": [
         "linux/amd64"
       ],
@@ -522,7 +522,7 @@
         "apt_packages": [
           "sudo",
           "openjdk-17-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
@@ -542,7 +542,7 @@
           "gcc-14",
           "g++-14"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;35.0.0",
@@ -563,25 +563,25 @@
         }
       }
     },
-    "api34-35-j17-21-23-ndk26-emu-api35": {
+    "api34-35-j17-21-25-ndk26-emu-api35": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -608,7 +608,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "emulator",
@@ -636,25 +636,25 @@
         "allure_version": "2.27.0"
       }
     },
-    "api35-36-j17-21-23-ndk26-emu-api35": {
+    "api35-36-j17-21-25-ndk26-emu-api35": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -681,7 +681,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "emulator",
@@ -709,25 +709,25 @@
         "allure_version": "2.27.0"
       }
     },
-    "api36-37-j17-21-23": {
+    "api36-37-j17-21-25": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -735,7 +735,7 @@
           "vim",
           "jq"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;36.0.0",
@@ -754,25 +754,25 @@
         }
       }
     },
-    "api36-37-j17-21-23-ndk26": {
+    "api36-37-j17-21-25-ndk26": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -786,7 +786,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;36.0.0",
@@ -807,25 +807,25 @@
         }
       }
     },
-    "api36-37-j17-21-23-ndk26-emu-api36": {
+    "api36-37-j17-21-25-ndk26-emu-api36": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -852,7 +852,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "emulator",
@@ -878,25 +878,25 @@
         "allure_version": "2.27.0"
       }
     },
-    "api36-37-j17-21-23-ndk26-emu-api37": {
+    "api36-37-j17-21-25-ndk26-emu-api37": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -923,7 +923,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "emulator",
@@ -949,25 +949,25 @@
         "allure_version": "2.27.0"
       }
     },
-    "api36-37-j17-21-23-ndk26-emu-api36-37": {
+    "api36-37-j17-21-25-ndk26-emu-api36-37": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -994,7 +994,7 @@
           "make",
           "openssl"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "emulator",
@@ -1021,25 +1021,25 @@
         "allure_version": "2.27.0"
       }
     },
-    "api37-j17-21-23": {
+    "api37-j17-21-25": {
       "platforms": [
         "linux/amd64"
       ],
       "docker": {
-        "ubuntu": "23.04",
-        "apt_profile": "ubuntu23_old_releases",
+        "ubuntu": "24.04",
+        "apt_profile": "ubuntu24",
         "apt_packages": [
           "sudo",
           "rsync",
           "openjdk-17-jdk",
           "java-21-amazon-corretto-jdk",
-          "java-23-amazon-corretto-jdk",
+          "java-25-amazon-corretto-jdk",
           "curl",
           "expect",
           "git",
           "git-lfs",
           "libc6:i386",
-          "libncurses5:i386",
+          "libncurses6:i386",
           "libstdc++6:i386",
           "zlib1g:i386",
           "wget",
@@ -1047,7 +1047,7 @@
           "vim",
           "jq"
         ],
-        "java_default": "java-23-amazon-corretto",
+        "java_default": "java-25-amazon-corretto",
         "sdk_packages": [
           "cmdline-tools;latest",
           "build-tools;37.0.0",

@@ -1,7 +1,7 @@
-ARG UBUNTU_VERSION=23.04
+ARG UBUNTU_VERSION=24.04
 FROM ubuntu:${UBUNTU_VERSION}
 
-ARG APT_PROFILE=ubuntu23_old_releases
+ARG APT_PROFILE=ubuntu24
 ARG APT_PACKAGES_CSV
 ARG JAVA_DEFAULT
 ARG SDK_PACKAGES_CSV
@@ -47,27 +47,19 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN set -eux; \
     dpkg --add-architecture i386; \
     case "${APT_PROFILE}" in \
-      ubuntu23_old_releases) \
-        if [ -f /etc/apt/sources.list ]; then \
-          sed -i -re 's/([a-z]{2}\\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list; \
-        else \
+      ubuntu24) \
+        arch="$(dpkg --print-architecture)"; \
+        if [[ "${arch}" != "amd64" ]]; then \
+          sed -i "/^Types:/a Architectures: ${arch}" /etc/apt/sources.list.d/ubuntu.sources; \
           printf '%s\n' \
-            'deb http://old-releases.ubuntu.com/ubuntu/ lunar main restricted universe multiverse' \
-            'deb http://old-releases.ubuntu.com/ubuntu/ lunar-updates main restricted universe multiverse' \
-            'deb http://old-releases.ubuntu.com/ubuntu/ lunar-security main restricted universe multiverse' \
-            > /etc/apt/sources.list; \
+            'Types: deb' \
+            'URIs: http://archive.ubuntu.com/ubuntu/' \
+            'Suites: noble noble-updates noble-security' \
+            'Components: main restricted universe multiverse' \
+            'Architectures: i386' \
+            'Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg' \
+            > /etc/apt/sources.list.d/i386.sources; \
         fi; \
-        echo "deb http://security.ubuntu.com/ubuntu focal-security main universe" >> /etc/apt/sources.list; \
-        ;; \
-      ubuntu25_i386_focal) \
-        touch /etc/apt/sources.list.d/i386.list; \
-        if [ -f /etc/apt/sources.list ]; then \
-          sed -i 's/^deb http/deb [arch=amd64,arm64] http/' /etc/apt/sources.list; \
-        fi; \
-        echo "deb [arch=i386] http://security.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse" >> /etc/apt/sources.list.d/i386.list; \
-        echo "deb [arch=i386] http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse" >> /etc/apt/sources.list.d/i386.list; \
-        echo "deb [arch=i386] http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse" >> /etc/apt/sources.list.d/i386.list; \
-        echo "deb [arch=i386] http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse" >> /etc/apt/sources.list.d/i386.list; \
         ;; \
       ubuntu24_toolchain) \
         if [ -f /etc/apt/sources.list ]; then \

@@ -16,24 +16,24 @@ fi
 expected_ids_json='[
   "api33-34-j11-17",
   "api33-34-j11-17-profiler",
-  "api33-34-j11-17-u25-ma",
+  "api33-34-j11-17-u24-ma",
   "api33-34-j17-21",
-  "api34-35-j17-21-23-ndk26",
-  "api34-35-j17-21-23-ndk26-emu-api35",
-  "api34-35-j17-23",
-  "api34-35-j17-23-ndk26",
-  "api34-35-j23-corretto",
-  "api34-35-j23-openjdk",
+  "api34-35-j17-21-25-ndk26",
+  "api34-35-j17-21-25-ndk26-emu-api35",
+  "api34-35-j17-25",
+  "api34-35-j17-25-ndk26",
+  "api34-35-j25-corretto",
+  "api34-35-j25-openjdk",
   "api35-36-j17-21",
-  "api35-36-j17-21-23-ndk26-emu-api35",
-  "api35-36-j17-23",
-  "api35-36-j17-23-ndk29-u24-gcc14",
-  "api36-37-j17-21-23",
-  "api36-37-j17-21-23-ndk26",
-  "api36-37-j17-21-23-ndk26-emu-api36",
-  "api36-37-j17-21-23-ndk26-emu-api37",
-  "api36-37-j17-21-23-ndk26-emu-api36-37",
-  "api37-j17-21-23"
+  "api35-36-j17-21-25-ndk26-emu-api35",
+  "api35-36-j17-25",
+  "api35-36-j17-25-ndk29-u24-gcc14",
+  "api36-37-j17-21-25",
+  "api36-37-j17-21-25-ndk26",
+  "api36-37-j17-21-25-ndk26-emu-api36",
+  "api36-37-j17-21-25-ndk26-emu-api36-37",
+  "api36-37-j17-21-25-ndk26-emu-api37",
+  "api37-j17-21-25"
 ]'
 
 jq -e '.image_repo | type == "string" and length > 0' "${variants_file}" >/dev/null
@@ -49,7 +49,7 @@ jq -e '
       (.key | test("^[a-z0-9][a-z0-9-]*$"))
       and (.value.platforms | type == "array" and length > 0 and all(test("^linux/(amd64|arm64)$")))
       and (.value.docker.ubuntu | type == "string" and test("^[0-9]+\\.[0-9]+$"))
-      and (.value.docker.apt_profile | IN("ubuntu23_old_releases", "ubuntu25_i386_focal", "ubuntu24_toolchain"))
+      and (.value.docker.apt_profile | IN("ubuntu24", "ubuntu24_toolchain"))
       and (.value.docker.apt_packages | type == "array" and length > 0 and length == (unique | length) and all(type == "string" and length > 0 and (contains(",") | not)))
       and (.value.docker.java_default | type == "string" and length > 0)
       and (.value.docker.sdk_packages | type == "array" and length > 0 and length == (unique | length) and all(type == "string" and length > 0 and (contains(",") | not)))

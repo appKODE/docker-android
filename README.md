@@ -7,25 +7,29 @@ All image variants are defined in `variants.json` and released by Git tag.
 
 | Variant ID | Ubuntu | Platforms | Java default | Android APIs | NDK / CMake | Extra features |
 | --- | --- | --- | --- | --- | --- | --- |
-| `api33-34-j11-17` | `23.04` | `linux/amd64` | `java-1.17.0-openjdk-amd64` | `33,34` | `-` | `-` |
-| `api33-34-j17-21` | `23.04` | `linux/amd64` | `java-1.21.0-openjdk-amd64` | `33,34` | `-` | `-` |
-| `api33-34-j11-17-u25-ma` | `25.04` | `linux/amd64,linux/arm64` | `java-1.17.0-openjdk-amd64` | `33,34` | `-` | `multi-arch` |
-| `api33-34-j11-17-profiler` | `23.04` | `linux/amd64` | `java-1.17.0-openjdk-amd64` | `33,34` | `-` | `gradle-profiler` |
-| `api34-35-j23-openjdk` | `23.04` | `linux/amd64` | `java-1.23.0-openjdk-amd64` | `34,35` | `-` | `-` |
-| `api34-35-j17-21-23-ndk26` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `34,35` | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2` |
-| `api34-35-j17-21-23-ndk26-emu-api35` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `34,35` (+ `system-image 35`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
-| `api34-35-j17-23` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `34,35` | `-` | `-` |
-| `api34-35-j17-23-ndk26` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `34,35` | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2` |
-| `api34-35-j23-corretto` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `34,35` | `-` | `-` |
-| `api35-36-j17-23` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `35,36` | `-` | `-` |
-| `api35-36-j17-23-ndk29-u24-gcc14` | `24.04` | `linux/amd64` | `java-23-amazon-corretto` | `35,36` | `ndk 29.0.14033849`, `cmake 4.1.1` | `python2`, `gcc14` |
-| `api35-36-j17-21-23-ndk26-emu-api35` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `35,36` (+ `system-image 35`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
-| `api36-37-j17-21-23` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` | `-` | `-` |
-| `api36-37-j17-21-23-ndk26` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` | `ndk 26.2.11394342`, `cmake 3.22.1` | `python2` |
-| `api36-37-j17-21-23-ndk26-emu-api36` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` (+ `system-image 36`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
-| `api36-37-j17-21-23-ndk26-emu-api37` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` (+ `system-image 37`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
-| `api36-37-j17-21-23-ndk26-emu-api36-37` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `36,37` (+ `system-image 36,37`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
-| `api37-j17-21-23` | `23.04` | `linux/amd64` | `java-23-amazon-corretto` | `37` | `-` | `-` |
+| `api33-34-j11-17` | `24.04` | `linux/amd64` | `java-1.17.0-openjdk-amd64` | `33,34` | `-` | `-` |
+| `api33-34-j17-21` | `24.04` | `linux/amd64` | `java-1.21.0-openjdk-amd64` | `33,34` | `-` | `-` |
+| `api33-34-j11-17-u24-ma` | `24.04` | `linux/amd64,linux/arm64` | `java-1.17.0-openjdk-amd64` | `33,34` | `-` | `multi-arch` |
+| `api33-34-j11-17-profiler` | `24.04` | `linux/amd64` | `java-1.17.0-openjdk-amd64` | `33,34` | `-` | `gradle-profiler` |
+| `api34-35-j25-openjdk` | `24.04` | `linux/amd64` | `java-1.25.0-openjdk-amd64` | `34,35` | `-` | `-` |
+| `api34-35-j17-21-25-ndk26` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `34,35` | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2` |
+| `api34-35-j17-21-25-ndk26-emu-api35` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `34,35` (+ `system-image 35`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
+| `api34-35-j17-25` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `34,35` | `-` | `-` |
+| `api34-35-j17-25-ndk26` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `34,35` | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2` |
+| `api34-35-j25-corretto` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `34,35` | `-` | `-` |
+| `api35-36-j17-25` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `35,36` | `-` | `-` |
+| `api35-36-j17-25-ndk29-u24-gcc14` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `35,36` | `ndk 29.0.14033849`, `cmake 4.1.1` | `python2`, `gcc14` |
+| `api35-36-j17-21-25-ndk26-emu-api35` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `35,36` (+ `system-image 35`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
+| `api36-37-j17-21-25` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `36,37` | `-` | `-` |
+| `api36-37-j17-21-25-ndk26` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `36,37` | `ndk 26.2.11394342`, `cmake 3.22.1` | `python2` |
+| `api36-37-j17-21-25-ndk26-emu-api36` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `36,37` (+ `system-image 36`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
+| `api36-37-j17-21-25-ndk26-emu-api37` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `36,37` (+ `system-image 37`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
+| `api36-37-j17-21-25-ndk26-emu-api36-37` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `36,37` (+ `system-image 36,37`) | `ndk 26.2.11394342`, `cmake 3.18.1/3.22.1` | `python2`, `emulator`, `marathon 0.10.1` |
+| `api37-j17-21-25` | `24.04` | `linux/amd64` | `java-25-amazon-corretto` | `37` | `-` | `-` |
+
+Since v5 all variants are on Ubuntu 24.04 (noble, supported) and Java 23 (EOL) is replaced by Java 25.
+Frozen at v4, no longer rebuilt (images stay on Docker Hub): all `*-j17-21-23*`, `*-j17-23*`, `api34-35-j23-*`
+and `api33-34-j11-17-u25-ma` — use the `j25` / `u24-ma` IDs above instead.
 
 ## Release By Git Tag
 
@@ -120,21 +124,21 @@ Multi-JDK variants:
 | --- | --- | --- | --- |
 | `api33-34-j11-17` | `openjdk-11-jdk`, `openjdk-17-jdk` | `java-1.17.0-openjdk-amd64` | `update-java-alternatives --set java-1.11.0-openjdk-amd64` |
 | `api33-34-j17-21` | `openjdk-17-jdk`, `openjdk-21-jdk` | `java-1.21.0-openjdk-amd64` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api33-34-j11-17-u25-ma` | `openjdk-11-jdk`, `openjdk-17-jdk` | `java-1.17.0-openjdk-amd64` | `update-java-alternatives --set java-1.11.0-openjdk-amd64` |
+| `api33-34-j11-17-u24-ma` | `openjdk-11-jdk`, `openjdk-17-jdk` | `java-1.17.0-openjdk-amd64` | `update-java-alternatives --set java-1.11.0-openjdk-amd64` |
 | `api33-34-j11-17-profiler` | `openjdk-11-jdk`, `openjdk-17-jdk` | `java-1.17.0-openjdk-amd64` | `update-java-alternatives --set java-1.11.0-openjdk-amd64` |
-| `api34-35-j17-21-23-ndk26` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api34-35-j17-21-23-ndk26-emu-api35` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api34-35-j17-23` | `openjdk-17-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api34-35-j17-23-ndk26` | `openjdk-17-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api35-36-j17-23` | `openjdk-17-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api35-36-j17-23-ndk29-u24-gcc14` | `openjdk-17-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api35-36-j17-21-23-ndk26-emu-api35` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api36-37-j17-21-23` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api36-37-j17-21-23-ndk26` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api36-37-j17-21-23-ndk26-emu-api36` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api36-37-j17-21-23-ndk26-emu-api37` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api36-37-j17-21-23-ndk26-emu-api36-37` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
-| `api37-j17-21-23` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-23-amazon-corretto-jdk` | `java-23-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api34-35-j17-21-25-ndk26` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api34-35-j17-21-25-ndk26-emu-api35` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api34-35-j17-25` | `openjdk-17-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api34-35-j17-25-ndk26` | `openjdk-17-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api35-36-j17-25` | `openjdk-17-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api35-36-j17-25-ndk29-u24-gcc14` | `openjdk-17-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api35-36-j17-21-25-ndk26-emu-api35` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api36-37-j17-21-25` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api36-37-j17-21-25-ndk26` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api36-37-j17-21-25-ndk26-emu-api36` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api36-37-j17-21-25-ndk26-emu-api37` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api36-37-j17-21-25-ndk26-emu-api36-37` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
+| `api37-j17-21-25` | `openjdk-17-jdk`, `java-21-amazon-corretto-jdk`, `java-25-amazon-corretto-jdk` | `java-25-amazon-corretto` | `update-java-alternatives --set java-21-amazon-corretto`, `update-java-alternatives --set java-1.17.0-openjdk-amd64` |
 
 ## Local Validation
 
