@@ -96,7 +96,7 @@ RUN set -eux; \
 
 RUN set -eux; \
     if [[ -n "${JAVA_DEFAULT}" ]]; then \
-      update-java-alternatives --set "${JAVA_DEFAULT}"; \
+      update-java-alternatives --set "${JAVA_DEFAULT/amd64/$(dpkg --print-architecture)}"; \
     fi
 
 RUN set -eux; \
