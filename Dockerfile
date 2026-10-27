@@ -117,6 +117,8 @@ RUN groupadd android && useradd -d /opt/android-sdk-linux -g android android
 COPY tools /opt/tools
 COPY licenses /opt/licenses
 
+RUN /opt/tools/distrust-emudhra.sh
+
 RUN set -eux; \
     if [[ "${ENABLE_PROFILER}" == "true" ]]; then \
       mkdir -p "${GRADLE_PROFILER_HOME}"; \

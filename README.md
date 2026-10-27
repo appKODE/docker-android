@@ -72,6 +72,16 @@ Behavior:
 - `/opt/tools/android-env.sh` exports Android env vars and provides `update_sdk` / `andep`.
 - `/opt/tools/android-accept-licenses.sh` is an `expect` wrapper that auto-confirms SDK license prompts.
 
+### Distrusted CAs (eMudhra, since v4)
+
+`/opt/tools/distrust-emudhra.sh` runs right after the tools are copied, before any SDK download.
+It removes every root whose subject matches `emSign|eMudhra|AAA Certificate Services` from the system
+bundle (`!mozilla/...` in `/etc/ca-certificates.conf` + `update-ca-certificates --fresh`) and from every
+JDK `cacerts` under `/usr/lib/jvm`, then fails the build if any remain. Reason: the eMudhra intermediate CA
+keys were compromised in Oct 2026 (CVE-2026-111943/111944, Java: CVE-2026-91403), which allows forged TLS
+for Gradle/sdkmanager/git downloads. `AAA Certificate Services` (Sectigo, cross-signs emSign) goes too;
+Google, Maven Central, Gradle and GitHub do not chain to it.
+
 ### Runtime Usage In Container
 
 ```bash
